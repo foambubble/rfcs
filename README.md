@@ -117,9 +117,9 @@ feel free to ask (e.g. by leaving a comment on the associated issue).
 
 **This RFC process is subject to change. If it's not working for us, we'll improve it, or replace it with a more suitable process.**
 
-**Foams's RFC process owes its inspiration to the [React RFC process], which in turn is takes inspiration from [Yarn RFC process], [Rust RFC process], and [Ember RFC process]**
+**Foams's RFC process owes its inspiration to the [React RFC process], which in turn takes inspiration from [Yarn RFC process], [Rust RFC process], and [Ember RFC process]**
 
-[Yarn RFC process]: https://github.com/reactjs/rfcs
+[React RFC process]: https://github.com/reactjs/rfcs
 [Yarn RFC process]: https://github.com/yarnpkg/rfcs
 [Rust RFC process]: https://github.com/rust-lang/rfcs
 [Ember RFC process]: https://github.com/emberjs/rfcs
