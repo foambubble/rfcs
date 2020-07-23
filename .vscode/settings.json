@@ -1,0 +1,17 @@
+{
+  "files.autoSave": "onFocusChange",
+  "editor.minimap.enabled": false,
+  "editor.wrappingIndent": "indent",
+  "editor.overviewRulerBorder": false,
+  "editor.lineHeight": 24,
+  "workbench.colorTheme": "Gray Matter Light",
+  "[markdown]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "git.enableSmartCommit": true,
+  "git.postCommitCommand": "sync"
+}
