@@ -53,8 +53,9 @@ is 'active' and may be implemented with the goal of eventual inclusion
 into Foam.
 
 * Fork the RFC repo http://github.com/foambubble/rfcs
-* Copy `0000-template.md` to `text/0000-my-feature.md` (where
+* Copy `0000-template.md` to `docs/0000-my-feature.md` (where
 'my-feature' is descriptive. Don't assign an RFC number yet).
+* Add a Foam-style wiki link to `docs/index.md` and ensure link reference definitions are appropriately generated.
 * Fill in the RFC. Put care into the details: **RFCs that do not
 present convincing motivation, demonstrate understanding of the
 impact of the design, or are disingenuous about the drawbacks or

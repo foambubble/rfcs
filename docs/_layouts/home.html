@@ -1,0 +1,14 @@
+---
+layout: foam
+---
+
+{{ content }}
+
+<script>
+window.addEventListener('DOMContentLoaded', (event) => {
+  var duplicateHeading = document.querySelector("h1:not(#foam)");
+  if (duplicateHeading && duplicateHeading.remove) {
+    duplicateHeading.remove();
+  }
+});
+</script>
