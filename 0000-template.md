@@ -1,12 +1,16 @@
-- Start Date: (fill me in with today's date, YYYY-MM-DD)
-- RFC PR: (leave this empty)
-- Foam Issue: (leave this empty)
+---
+Start Date: (fill me in with today's date, YYYY-MM-DD)
+RFC PR: (leave this empty)
+Foam Issue: (leave this empty)
+---
 
-# Summary
+# 0000 Template
+
+## Summary
 
 Brief explanation of the feature, change or process.
 
-# Basic example
+## Basic example
 
 If the proposal involves a new or changed API, include a basic code example.
 
@@ -14,7 +18,7 @@ If the proposal involves a new or changed user interface element, include a desc
 
 Omit this section if it's not applicable.
 
-# Motivation
+## Motivation
 
 Why are we doing this? What use cases does it support? What is the expected
 outcome?
@@ -24,7 +28,7 @@ the motivation could be used to develop alternative solutions. In other words,
 enumerate the constraints you are trying to solve without coupling them too
 closely to the solution you have in mind.
 
-# Detailed design
+## Detailed design
 
 This is the bulk of the RFC. Explain the design in enough detail for somebody
 familiar with Foam to understand, and for somebody familiar with the
@@ -32,7 +36,7 @@ implementation to implement. This should get into specifics and corner-cases,
 and include examples of how the feature is used. Any new terminology should be
 defined here.
 
-# Drawbacks
+## Drawbacks
 
 Why should we *not* do this? Please consider:
 
@@ -44,17 +48,17 @@ Why should we *not* do this? Please consider:
 
 There are tradeoffs to choosing any path. Attempt to identify them here.
 
-# Alternatives
+## Alternatives
 
 What other designs have been considered? What is the impact of not doing this?
 
-# Adoption strategy
+## Adoption strategy
 
 If we implement this proposal, how will existing Foam users adopt it? Is
 this a breaking change? Should we coordinate with
 other projects or extensions?
 
-# Unresolved questions
+## Unresolved questions
 
 Optional, but suggested for first drafts. What parts of the design are still
 TBD?

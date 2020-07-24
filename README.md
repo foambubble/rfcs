@@ -55,6 +55,7 @@ into Foam.
 * Fork the RFC repo http://github.com/foambubble/rfcs
 * Copy `0000-template.md` to `docs/0000-my-feature.md` (where
 'my-feature' is descriptive. Don't assign an RFC number yet).
+* Change the title of the file to match the file name (e.g. `# 0000 Template` to `# 0000 My Feature`).
 * Add a Foam-style wiki link to `docs/index.md` and ensure link reference definitions are appropriately generated.
 * Fill in the RFC. Put care into the details: **RFCs that do not
 present convincing motivation, demonstrate understanding of the
