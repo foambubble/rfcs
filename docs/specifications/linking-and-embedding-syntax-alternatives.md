@@ -1,0 +1,91 @@
+# Linking and Embedding Syntax Alternatives
+
+## Anchors
+
+- **Alternative 1**: Normal HTML elements
+  - Examples:
+    - `<a name="some-anchor"></a>`
+    - `<a id="some-anchor"></a>`
+    - `<a id="some-anchor"/>`
+    - `<span id="some-anchor"></span>`
+  - Pros:
+    - Just HTML
+    - Doesn't get rendered into any output by default
+    - Works without any further work (?)
+  - Cons:
+    - Subjectively ugly
+    - Somewhat verbose
+    - In case enclosing tag is not used, gets sometimes rendered incorrectly(?)
+- **Alternative 2**: Empty links
+  - Examples:
+    - `[](some-anchor)`
+  - Pros:
+    - Concise
+    - Doesn't get rendered into any output by default
+  - Cons:
+    - Kind of misuse of links ("interpret link without text as anchor")
+    - Might be confusing to users
+- **Alternative 3**: Markdown attribute extensions
+  - Examples:
+    - `{#some-anchor}`
+  - Pros:
+    - Concise
+    - Pretty (?)
+  - Cons:
+    - As default gets rendered as such everywhere
+    - Is this supported anywhere? Discussed e.g. [here](https://talk.commonmark.org/t/anchors-in-markdown/247/32)
+- **Alternative 4**: Letter-prefix anchors
+  - Examples:
+    - `§some-anchor`
+  - Pros:
+    - Cannot be anymore Concise
+    - As pretty as it gets (?)
+  - Cons:
+    - As default gets rendered as such everywhere
+    - Not supported anywhere, requires foam specific tooling
+    - Which letter to use to not mix it with anything else - make configurable?
+- **Alternative 5**: LinkRefDef blocks
+  - Examples:
+    - `[foam:block]: some-anchor`
+  - Pros:
+    - Doesn't get rendered in any output
+  - Cons:
+    - "Misuse" of linkrefdefs
+    - Cannot be used inline
+    - Might be confusing when mixed with other linkrefdefs
+- **Alternative 6**: Bookkeeping on the side
+  - No examples since there's no syntax
+  - Would require some kind of file on the side that can be manipulated via editor (vscode) e.g. by right-clicking the position in the note and selecting "add anchor" and giving it an id. Position and id would be stored into separate file.
+  - Would require visualizing these on top of the text editor
+  - Pros:
+    - No syntax, note is always easy to read in its raw format
+  - Cons:
+    - Might be brutally hard to implement (consider all the possibilities of delete / modify / move / copy-paste and use of external editors)
+    - Might lock the user to vscode (+ other supported editors)
+    - Markdown file is not anymore the single source of truth
+
+## Embedding
+
+Note that all the alternatives below require special processing to get embeds showing in published artifacts. It's also not clear if it's a benefit that syntax used for embedding gets rendered as such if the renderer doesn't support it.
+
+- **Alternative 1**: Wikilink with additions
+  - Examples:
+    - `![[some-anchor]]`
+  - Notes:
+    - Gets rendered by default
+    - Looks like wikilink-syntax
+    - Looks like image syntax, which is kind of embedding
+    - Supported by vscode-memo (for full notes)
+- **Alternative 2**: Empty links
+  - Examples:
+    - `[](>some-anchor)` (add prefix to anchor name to denote embedding)
+  - Notes:
+    - Doesn't get rendered by default
+    - In case empty links would be used for anchors, syntax would be similar
+- **Alternative 3**: Letter-prefix embeds
+  - Examples:
+    - `§§some-anchor`
+  - Notes:
+    - Can be one or more letters (in the example, repeats the letter of the anchor)
+    - Gets rendered by default
+    - As concise as it gets
