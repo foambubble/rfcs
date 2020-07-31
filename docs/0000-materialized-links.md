@@ -17,7 +17,7 @@ In Foam, you can link between documents using `[[wiki-link]]` syntax. We parse a
 
 ## Basic example
 
-Assume a following three markdown documents:
+Consider following three markdown documents:
 
 `note-a.md`
 ```md
@@ -44,22 +44,20 @@ If we generated both Forward links and Backlinks for `note-a.md`, it would look 
 This is a link to [[note-b]].
 
 ## Foam:Links
+
 - [Note B](note-b)
 
 ## Foam:Backlinks
+
 - [Note B](note-b)
 - [Note C](note-c)
 ```
-
-Note the following:
-
-- 
 
 ## Motivation
 
 ### Backlinks
 
-You can already view backlinks inside the Markdown Notes backlinks explorer. Ma
+You can already view backlinks inside the Markdown Notes backlinks explorer. Materializing backlinks adds the following benefits:
 
 - Including the backlink information for benefit of other tools that do not have access to the Foam graph.
 - Used to generate reference lists
