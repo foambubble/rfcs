@@ -45,6 +45,8 @@ Another Author Name
 ``` 
 `Author Name` and `Another Author Name` are roots. There is smth like `parent: Author Name` in the metadata section of `Book Title 1` and `Book Title 2`. There is `parent: Book Title 1` in the metadata section of `Quote 1` and `Quote 2`. There is `parent: Book Title 2` in the metadata section of `Quote 3` etc.
 
+In the same time the 'root' notes `Author Name` and `Another Author Name` can be children of some other note(s) (say, `Reading`).
+
 It should be possible to add more than one parent to a note: `parent: Software, Programming`
 
 ## Motivation
